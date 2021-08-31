@@ -1,0 +1,23 @@
+.app-header {
+	height: 10em;
+	width: 100%;
+	background-color: black;
+	top: 0;
+	position: sticky;
+}
+
+.app-header-body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	padding: 2em;
+}
+.app-header-body-heading {
+	color: white;
+}
+
+.no-images {
+	text-align: center;
+}

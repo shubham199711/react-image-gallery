@@ -1,0 +1,31 @@
+.input-group-overlay,
+.input-group-overlay .input-group-append-overlay,
+.input-group-overlay .rbt {
+	display: flex !important;
+	align-items: center;
+}
+
+.rbt-aux {
+	position: absolute;
+	right: 10px;
+}
+.rbt-close {
+	background: transparent;
+	border: none;
+	color: red !important;
+}
+
+.rbt-menu {
+	padding: 5px 0 !important;
+}
+
+.search-input-div {
+	max-width: 50em;
+	height: 3em;
+}
+
+.search-dropdown-text {
+	font-size: 14px;
+	color: black;
+	margin: 0;
+}
