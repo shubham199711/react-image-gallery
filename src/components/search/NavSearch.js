@@ -5,7 +5,7 @@ import {
 	addToSearchHistory,
 	getRelativeSearchHistory,
 	getSearchHistory,
-} from '../../services/local-storage';
+} from '../../services/localStorage';
 
 const ENTER_KEY = 'Enter';
 

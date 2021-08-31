@@ -1,6 +1,6 @@
 import './App.css';
 import { useState, useEffect, useCallback } from 'react';
-import { getRecentImages, getSearchedImages } from './services/image-service';
+import { getRecentImages, getSearchedImages } from './services/imageService';
 import Header from './components/header/Header';
 import ImageGallery from './components/imageGallery/ImageGallery';
 
