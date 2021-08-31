@@ -1,5 +1,5 @@
 import './NavSearch.css';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { ClearButton, AsyncTypeahead } from 'react-bootstrap-typeahead';
 import {
 	addToSearchHistory,
@@ -13,10 +13,12 @@ const NavSearch = ({ onSubmit, onSearchClear }) => {
 	const [search, setSearch] = useState('');
 	const [options, setOptions] = useState(() => getSearchHistory());
 	const [isClearShown, setIsClearShown] = useState(false);
+	const ref = useRef(null);
 
 	const onSearchSubmit = (value) => {
 		addToSearchHistory(value);
 		onSubmit(value);
+		ref?.current?.blur?.();
 	};
 
 	const filterBy = () => true;
@@ -47,6 +49,7 @@ const NavSearch = ({ onSubmit, onSearchClear }) => {
 				<AsyncTypeahead
 					filterBy={filterBy}
 					id='async-example'
+					ref={ref}
 					labelKey='title'
 					useCache={true}
 					isLoading={false}
