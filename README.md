@@ -17,3 +17,5 @@ npm i | yarn
 ```
 npm start | yarn start
 ```
+
+# LIVE DEMO [HERE](https://react-image-gallery-demo.surge.sh/)
